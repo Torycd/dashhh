@@ -1,0 +1,58 @@
+.grid-cl {
+  display: flex;
+  flex-direction: column;
+}
+.grid-cl-content {
+  background: linear-gradient(
+      114.04deg,
+      rgba(66, 59, 55, 0.6) 3.49%,
+      rgba(66, 59, 55, 0) 34.7%
+    ),
+    linear-gradient(130.58deg, rgba(59, 43, 30, 0.37) 43.56%, #fea767 112.68%);
+  flex: 1;
+  border-radius: 10px;
+  padding: 16px;
+}
+.grid-cl-content .lg-value {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: #c7c4c4;
+}
+.grid-cl-content .card-wrapper {
+  display: flex;
+}
+.grid-cl-content .card-pin-hidden {
+  font-size: 36px;
+  margin: 8px;
+}
+.grid-cl-content span {
+  color: #8a8587;
+}
+.grid-cl .card-logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-cl .card-logo {
+  display: flex;
+}
+.grid-cl .logo-shape1,
+.grid-cl .logo-shape2 {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+.grid-cl .logo-shape1 {
+    background-color: var(--clr-scarlet-v1);
+    margin-right: -15px;
+    z-index: 0;
+}
+.grid-cl .logo-shape2{
+    background-color: var(--clr-yellow);
+}
+@media screen and (max-width: 768px) {
+    .grid-cl {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
